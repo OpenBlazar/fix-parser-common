@@ -1,4 +1,4 @@
-# Fix Parser Service Registry
+# Fix Parser Common
 
 [![Build Status](https://travis-ci.org/OpenBlazar/fix-parser-common.svg?branch=master)](https://travis-ci.org/OpenBlazar/fix-parser-common)
 [![codecov](https://codecov.io/gh/WojciechZankowski/fix-parser-common/branch/master/graph/badge.svg)](https://codecov.io/gh/WojciechZankowski/fix-parser-common)
