@@ -4,32 +4,45 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pl.zankowski.fixparser</groupId>
     <artifactId>common-all</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>pl.zankowski.fixparser</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <name>Fix Parser Common</name>
+    <description>Common module for Fix Parser components</description>
+    <url>https://github.com/OpenBlazar/fix-parser-common.git</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>WojciechZankowski</id>
+            <name>Wojciech Zankowski</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/OpenBlazar/fix-parser-common.git</connection>
+        <developerConnection>scm:git:git@github.com:OpenBlazar/fix-parser-common.git
+        </developerConnection>
+        <url>https://github.com/OpenBlazar/fix-parser-common.git</url>
+        <tag>master</tag>
+    </scm>
+
     <modules>
         <module>common-security</module>
         <module>common</module>
     </modules>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
-    <dependencyManagement>
-
-        <dependencies>
-            <dependency>
-                <groupId>io.jsonwebtoken</groupId>
-                <artifactId>jjwt</artifactId>
-                <version>0.9.0</version>
-            </dependency>
-        </dependencies>
-
-    </dependencyManagement>
 
 </project>
